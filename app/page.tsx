@@ -1,7 +1,9 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex"></div>
+    <main className="flex flex-col items-center justify-between">
+      <div className="text-mainColor flex h-[100dvh] w-full max-w-xl flex-col items-center justify-between border-black bg-white">
+        <span className="p-4 text-4xl">Funnection</span>
+      </div>
     </main>
   );
 }

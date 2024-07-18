@@ -56,6 +56,7 @@ const config = {
       },
       colors: {
         backgroundBlack: "#0A0909",
+        mainColor: "#334155",
         thickRed: "#920028",
         gray01: "#D2C9CD",
         gray02: "#B4ABAF",
