@@ -11,39 +11,48 @@ import { StaticImageData } from "next/image";
 export interface UserImageType {
   id: number;
   src: StaticImageData;
+  visitCount: string;
 }
 
 export const USER_LIST: UserImageType[] = [
   {
     id: 1,
     src: firstImage,
+    visitCount: "첫 참여",
   },
   {
     id: 2,
     src: ManImage,
+    visitCount: "첫 참여",
   },
   {
     id: 3,
     src: thirdImage,
+    visitCount: "두 번째 참여",
   },
   {
     id: 4,
     src: fourthImage,
+    visitCount: "첫 참여",
   },
   {
     id: 5,
     src: fifthImage,
+    visitCount: "첫 참여",
   },
   {
     id: 6,
     src: sixthImage,
+    visitCount: "첫 참여",
   },
   {
     id: 7,
     src: WomanImage,
+    visitCount: "첫 참여",
   },
   {
     id: 8,
     src: eighthImage,
+    visitCount: "두 번째 참여",
   },
 ];

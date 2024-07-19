@@ -16,6 +16,7 @@ export default async function PersonalPage({
   );
 
   const imageSrc = (userImage as UserImageType).src;
+  const userVisitCount = userImage?.visitCount;
 
   return (
     <main className="flex flex-col items-center justify-between px-4">
@@ -35,7 +36,7 @@ export default async function PersonalPage({
           <div className="flex w-full">
             <span className="text-2xl">
               {messageData[0].user.nickname} 님 <br />
-              <span>와주셔서 감사해요</span>
+              <span>{userVisitCount} 감사드려요~</span>
               <br />
               <span>항상 행복하시길 바랍니다!</span>
             </span>
