@@ -45,6 +45,18 @@ body,
   transform: translateY(2px);
 }
 
+.user-list-button {
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  border: solid 3px #163b5e;
+  box-shadow: 2px 3px 5px rgb(43, 43, 43);
+}
+
+.message-box {
+  box-shadow: 2px 3px 5px rgb(43, 43, 43);
+}
 
 @keyframes fadeInUp {
   0% {
