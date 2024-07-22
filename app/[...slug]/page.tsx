@@ -49,6 +49,7 @@ export default async function PersonalPage({
               className="message-box w-full rounded-lg bg-[#334155] p-4 text-lg text-white"
             >
               <span className="text-sm mdl:text-lg">
+                {/* blur-text  */}
                 {index + 1}. {message.message}
               </span>
             </div>
