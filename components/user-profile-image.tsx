@@ -1,7 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import ManImage from "@/public/man-image.png";
 import WomanImage from "@/public/woman-image.png";
-// import { getBaseUrl } from "@/api/fetchUserList";
 
 interface UserProfileImageProps {
   userId: number;
@@ -14,10 +15,10 @@ const UserProfileImage = ({
   checkImage,
   gender,
 }: UserProfileImageProps) => {
-  // const s3BaseUrl = getBaseUrl();
+  const s3BaseUrl = process.env.NEXT_PUBLIC_S3_BASE_URL;
   const checkIsMan = gender === "M" ? ManImage : WomanImage;
 
-  const imageUrl = `https://elio-bucket-s3.s3.amazonaws.com/funnection-${userId}.webp`;
+  const imageUrl = `${s3BaseUrl}/funnection-${userId}.webp`;
 
   return (
     <Image

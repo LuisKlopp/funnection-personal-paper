@@ -1,15 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   images: {
     remotePatterns: [
       {
         protocol: "https",
         hostname: "elio-bucket-s3.s3.amazonaws.com",
         port: "",
-        pathname: "/*",
+        pathname: "/**",
       },
     ],
   },
+  env: {
+    NEXT_PUBLIC_S3_BASE_URL: process.env.NEXT_PUBLIC_S3_BASE_URL,
+  },
 };
-
-export default nextConfig;
