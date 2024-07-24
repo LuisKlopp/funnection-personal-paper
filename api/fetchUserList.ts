@@ -27,4 +27,5 @@ export const fetchUser = async (
   return data;
 };
 
-export const getBaseUrl = () => process.env.NEXT_PUBLIC_S3_BASE_URL;
+export const getBaseUrl = () =>
+  "https://elio-bucket-s3.s3.amazonaws.com";
