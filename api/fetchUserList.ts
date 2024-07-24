@@ -1,4 +1,4 @@
-import { UserMessageType, UserType } from "@/types/user.types";
+import { UserMessageAndInfoType, UserType } from "@/types/user.types";
 
 export const fetchUserList = async (): Promise<UserType[]> => {
   const response = await fetch(
@@ -13,7 +13,7 @@ export const fetchUserList = async (): Promise<UserType[]> => {
 
 export const fetchUser = async (
   generateString: string,
-): Promise<UserMessageType[]> => {
+): Promise<UserMessageAndInfoType> => {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/history-user/${generateString}/messages`,
     {
