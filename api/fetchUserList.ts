@@ -26,3 +26,5 @@ export const fetchUser = async (
   const data = await response.json();
   return data;
 };
+
+export const getBaseUrl = () => process.env.NEXT_PUBLIC_S3_BASE_URL;
