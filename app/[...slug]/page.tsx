@@ -13,6 +13,8 @@ export default async function PersonalPage({
 
   const { messages, user } = messageAndUserData;
 
+  console.log(user.id, user.checkImagePath, user.gender);
+
   return (
     <main className="flex flex-col items-center justify-between px-4">
       <div className="flex h-[100dvh] w-full max-w-xl flex-col gap-4 border-black bg-white text-mainColor">
