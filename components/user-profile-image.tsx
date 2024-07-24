@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import ManImage from "@/public/man-image.png";
 import WomanImage from "@/public/woman-image.png";
