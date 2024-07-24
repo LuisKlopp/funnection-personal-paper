@@ -1,6 +1,6 @@
 import { fetchUser } from "@/api/fetchUserList";
 import Link from "next/link";
-import UserProfileImage from "@/components/user-profile-image";
+// import UserProfileImage from "@/components/user-profile-image";
 
 type PersonalPageProps = {
   params: { slug: string[] };
@@ -13,7 +13,7 @@ export default async function PersonalPage({
 
   const { messages, user } = messageAndUserData;
 
-  console.log(user.id, user.checkImagePath, user.gender);
+  // console.log(user.id, user.checkImagePath, user.gender);
 
   return (
     <main className="flex flex-col items-center justify-between px-4">
@@ -23,11 +23,11 @@ export default async function PersonalPage({
         </Link>
         <div className="flex w-full flex-col items-center gap-4">
           <div className="user-list-button flex h-44 w-[150px] justify-start mdl:h-48 mdl:w-[150px]">
-            <UserProfileImage
+            {/* <UserProfileImage
               userId={user.id}
               checkImage={user.checkImagePath}
               gender={user.gender}
-            />
+            /> */}
           </div>
           <div className="flex w-full">
             <span className="text-2xl">
