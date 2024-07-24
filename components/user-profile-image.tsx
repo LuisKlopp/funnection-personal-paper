@@ -17,7 +17,7 @@ const UserProfileImage = ({
   const s3BaseUrl = getBaseUrl();
   const checkIsMan = gender === "M" ? ManImage : WomanImage;
 
-  const imageUrl = `${s3BaseUrl}/funnection-${userId}.webp`;
+  const imageUrl = `https://elio-bucket-s3.s3.amazonaws.com/funnection-${userId}.webp`;
 
   return (
     <Image
