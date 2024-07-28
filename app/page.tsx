@@ -1,4 +1,4 @@
-import { fetchUserList } from "@/api/fetchUserList";
+// import { fetchUserList } from "@/api/fetchUserList";
 // import Link from "next/link";
 
 export default async function Home() {
