@@ -10,6 +10,7 @@ export interface UserType {
 export interface UserMessageType {
   id: number;
   message: string;
+  font: string;
 }
 
 export interface UserMessageAndInfoType {

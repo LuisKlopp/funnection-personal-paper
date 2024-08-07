@@ -1,7 +1,6 @@
 import { fetchUser } from "@/api/fetchUserList";
 import UserProfileImage from "@/components/user-profile-image";
 import Link from "next/link";
-// import UserProfileImage from "@/components/user-profile-image";
 
 type PersonalPageProps = {
   params: { slug: string[] };
@@ -44,11 +43,15 @@ export default async function PersonalPage({
               className="message-box w-full rounded-lg bg-[#334155] p-4 text-lg text-white"
             >
               <span className="text-sm mdl:text-lg">
-                {index + 1}. {message.message}
+                {index + 1}.{" "}
+                <span style={{ fontFamily: message.font }}>
+                  {message.message}
+                </span>
               </span>
             </div>
           ))}
         </div>
+        &nbsp;
       </div>
     </main>
   );
