@@ -175,9 +175,11 @@ body,
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
   }
   .input-custom {
-    width: 70%;
+    width: 10%;
     padding: 15px 10px 15px 15px;
     outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
     &::placeholder {
       font-size: 16px;
       font-weight: 500;

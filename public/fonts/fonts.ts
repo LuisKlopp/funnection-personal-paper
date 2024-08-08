@@ -53,7 +53,43 @@ export const pretendard = localFont({
 export const jua = localFont({
   src: [
     {
-      path: "./Jua-Regular.ttf",
+      path: "./Jua-Regular.woff",
+      style: "normal",
+    },
+  ],
+});
+
+export const gamja = localFont({
+  src: [
+    {
+      path: "./GamjaFlower-Regular.woff",
+      style: "normal",
+    },
+  ],
+});
+
+export const jalnan = localFont({
+  src: [
+    {
+      path: "./Jalnan2.woff",
+      style: "normal",
+    },
+  ],
+});
+
+export const kyobo = localFont({
+  src: [
+    {
+      path: "./KyoboHand.woff",
+      style: "normal",
+    },
+  ],
+});
+
+export const kotra = localFont({
+  src: [
+    {
+      path: "./Kotra-Hope.woff",
       style: "normal",
     },
   ],
